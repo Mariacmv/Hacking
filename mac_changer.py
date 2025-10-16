@@ -4,19 +4,28 @@
 import subprocess
 import optparse
 
-parser = optparse.OptionParser()
-parser.add_option("-i", "--interface", dest="interface", help="Interface to change its MAC address")
-parser.add_option("-m", dest="mac_address", help="New MAC address")
-#Os dois primeiros argumentos indicam os comandos que o usuário pode utilizar para adicionar argumentos através de -i ou --interface
-#A informação que o usuário armazenar deve ser guardada em 'interface' e se o usuário precisar de ajuda mostre a mensagem de ajuda
+def get_arguments():
+    parser = optparse.OptionParser()
+    parser.add_option("-i", "--interface", dest="interface", help="Interface to change its MAC address")
+    parser.add_option("-m", dest="new_mac", help="New MAC address")
+    (options, arguments) = parser.parse_args()
 
-parser.parse_args() #Quero que faça o parse
+    if not options.interface:
+        #Se não tiver valor para a variável interface
+        parser.error("[-] É necessário informar a interface. --help para ajuda")
+    elif not options.new_mac:
+        #Se não tiver valor para a variável new_mac
+        parser.error("[-] É necessário informar um endereço MAC. --help para ajuda")
+    return options
 
-interface = input('Digite a interface desejada: ')
-mac_address = input('Digite o novo endereco MAC: ')
+def change_mac(interface, new_mac):
+    print("[+] Changing interface for:",interface, "to " +new_mac)
 
-print("[+] Changing interface for:",interface, "to " +mac_address)
+    subprocess.call(['ifconfig', interface, 'down'])
+    subprocess.call(['ifconfig', interface, 'hw ether', new_mac])
+    subprocess.call(['ifconfig', interface, 'up'])
 
-subprocess.call(['ifconfig', interface, 'down'])
-subprocess.call(['ifconfig', interface, 'hw ether', mac_address])
-subprocess.call(['ifconfig', interface, 'up'])
+ 
+options = get_arguments()
+change_mac(options.interface, options.new_mac)
+
