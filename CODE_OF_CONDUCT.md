@@ -1,6 +1,6 @@
 # Código de Conduta
 
-Este repositório é destinado ao estudo pessoal e aprendizado de hacking ético. Esperamos que todos que interajam com este projeto o façam de forma respeitosa e ética.
+Este repositório é destinado ao estudo pessoal e aprendizado de hacking ético. Espero que todos que interajam com este projeto o façam de forma respeitosa e ética.
 
 ## Comportamento esperado
 - Respeitar todas as pessoas e opiniões.
