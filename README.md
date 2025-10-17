@@ -1,4 +1,11 @@
-Aviso rápido: este repositório é para estudo ético e defesa. Use tudo aqui apenas em ambientes controlados, máquinas suas ou laboratórios autorizados. Atividades maliciosas são ilegais e antiéticas — aqui a gente aprende pra proteger, auditar e entender. ✨
+Veja também: `CONTRIBUTING.md` — orientações para contribuir de forma segura e ética.
 
-# O que é este repositório
-É um repositório destinado ao estudo da linguagem python aplicado ao hacking 
+##Meu diário de estudos: hacking
+
+Projeto para documentar exercícios e conceitos que venho estudando em labs.
+
+*Aviso: todo o material aqui é para fins educacionais e experimentos em ambiente controlado (máquinas virtuais, labs). Não use essas ferramentas contra redes ou sistemas sem autorização expressa e documentada.*
+
+#O que tem aqui
+- Passo-a-passo teórico dos exercícios.
+- Minhas anotações e reflexões sobre o conteúdo
