@@ -9,4 +9,4 @@ Projeto para documentar exercícios e conceitos que venho estudando em labs.
 - Passo-a-passo teórico dos exercícios
 - Minhas anotações e reflexões sobre o conteúdo
 
-Veja também: [CONTRIBUTING.md](CONTRIBUTING.md) — orientações sobre contribuições (não aceitamos externas, mas fico feliz em discutir ideias pelo LinkedIn).
+Veja também: [CONTRIBUTING.md](CONTRIBUTING.md) — orientações sobre contribuições (não aceitamos externas, mas fico feliz em discutir ideias pelo LinkedIn: www.linkedin.com/in/maria-clara-viana-205422302).
