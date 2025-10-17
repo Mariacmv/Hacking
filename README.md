@@ -8,9 +8,9 @@ Projeto para documentar exercícios e conceitos que venho estudando em labs.
 ## O que tem aqui
 - Passo-a-passo teórico dos exercícios
 - Minhas anotações e reflexões sobre o conteúdo
-
-Veja também: [CONTRIBUTING.md](CONTRIBUTING.md) — orientações sobre contribuições (não aceitamos externas, mas fico feliz em discutir ideias pelo LinkedIn: www.linkedin.com/in/maria-clara-viana-205422302).
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+Veja também: [CONTRIBUTING.md](CONTRIBUTING.md) - orientações sobre contribuições (não aceito contribuição externa, mas fico feliz em discutir ideias pelo LinkedIn: www.linkedin.com/in/maria-clara-viana-205422302).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # My hacking study diary:
 
 **Notice:** all material here is for educational purposes and controlled environment experiments (virtual machines, labs).  
