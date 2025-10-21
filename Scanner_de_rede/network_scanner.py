@@ -7,7 +7,15 @@
 #   4º: Mostrar o resultado(v)
 #   5º: Criando uma lista de dicionários para melhorar a visualização da saída
 
+import argparse
 import scapy.all as scapy 
+
+#adiciona essa função para que o usuário passe o ip desejado de forma mais fácil, porém utilizando o módulo argparse, pois é mais recente
+def get_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-t', '--target', dest="target", help="IP alvo/ Faixa de IP")
+    options = parser.parse_args()
+    return options
 
 def scan(ip):
     arp_request = scapy.ARP(pdst=ip)  
@@ -26,9 +34,9 @@ def print_result(results_list):
     print("--------------------------------------------------------")
     print("IP\t\t\tMAC ADDRESS")
     print("--------------------------------------------------------")
-
     for client in results_list:
         print(client['ip'] + '\t\t' + client['mac'])
 
-scan_result = scan("10.0.2.1/24")
+options = get_arguments()
+scan_result = scan(options.target)
 print_result(scan_result)
